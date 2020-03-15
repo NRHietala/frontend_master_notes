@@ -1,5 +1,5 @@
 # frontend_master_notes
-
+'''javascript
 const arr = [1,2,3,4,5,6,7];
 
 const reduce = (array, initialValue, f) => {
@@ -29,3 +29,4 @@ const filter = (array, p) => {
 reduce(arr, 1, function(ele, result) {
   return ele * result;
 })
+'''

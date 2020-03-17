@@ -1,7 +1,7 @@
 # Currying
 ```javascript
 //Normal
-function addThreeNumbers = (a, b, c) => {
+const addThreeNumbers = (a, b, c) => {
   return a + b + c;
 }
 

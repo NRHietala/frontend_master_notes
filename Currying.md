@@ -1,5 +1,5 @@
 # Currying
-
+```javascript
 //Normal
 function addThreeNumbers = (a, b, c) => {
   return a + b + c;
@@ -18,3 +18,4 @@ const greetDeeplyCurried = function(greeting) {
 };
 
 greetDeeplyCurried("Hello")(" ")("AJ")("!");
+```

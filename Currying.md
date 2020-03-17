@@ -20,6 +20,7 @@ const greetDeeplyCurried = function(greeting) {
 greetDeeplyCurried("Hello")(" ")("AJ")("!");
 
 //Currying with the Arrow Notation
+
 const map = array => {
   return f => {
   const result = [];

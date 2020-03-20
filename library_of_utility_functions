@@ -1,5 +1,5 @@
 #Library of Utility Functions
-```javascript
+```Javascript
 const arr = [1,2,3,4,5,6,7];
 
 const library = {

@@ -1,6 +1,6 @@
+```javascript
 #Library of Utility Functions
 ##Recreation of the Underscore Library
-```javascript
 const arr = [1,2,3,4,5,6,7];
 
 const library = {

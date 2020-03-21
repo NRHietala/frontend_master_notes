@@ -1,2 +1,7 @@
 # The Hard Parts
 
+```javascript
+
+
+
+```

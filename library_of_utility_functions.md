@@ -48,5 +48,30 @@ const library = {
       }
     }
   }
+  filter: (array, p) => {
+    const result = [];
+    for(const ele of array) {
+      if(p(ele)) {
+        result.push(ele);
+      }
+    }
+    return result;
+  },
+  where: (array, properties) => {
+    const result = [];
+    for(const ele of array) {
+     let isValid = true;
+     for(const [key, value] of Object.entries(properties)) {
+       if(ele[key] !== value) {
+         isValid = false;
+         break;
+       }
+     }
+      if(isValid) {
+        result.push(ele);
+      }
+    }
+return result;
+}
 }
 ```

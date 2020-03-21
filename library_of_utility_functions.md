@@ -2,6 +2,13 @@
 ## Recreation of the Underscore Library
 ```javascript
 const arr = [1,2,3,4,5,6,7];
+const car = [{make: "Ford", model: "Focus", color: "blue", tires: 4}, {miles: 6000, country: "USA"}, {tires: 4, tireBrand: "Firestone"},{interior: "leather", colorOfInterior: "black"}];
+
+const {make, model, color, tires} = car[0];
+const {miles,country} = car[1];
+const {tireBrand} = car[2];
+const {interior, colorOfInterior} = car[3];
+
 
 const library = {
   each: (array,f) => {

@@ -1,5 +1,8 @@
 # The Hard Parts
 ## JS Principles
+### Notes
+
+### Code
 ```javascript
 
 ```

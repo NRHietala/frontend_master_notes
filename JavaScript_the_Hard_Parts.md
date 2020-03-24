@@ -6,11 +6,12 @@
 **Parameter**- the input name in a function
 **Argument**- the actual value assigned to the parameter name
 **Call Stack**- the structure that keeps track of what is being run. It operates as a "last in, first out" (think stack of plates)
-### Code
-```javascript
 
-```
 ## Functions & Callbacks
+# Notes
+**Parameterizing Behavior**- when you take a block of code and make it available without executing it.
+**Higher Order Function**- takes another function as input and/or returns a function as output 
+# Code
 ```javascript
 
 ```

@@ -11,11 +11,11 @@
 # Notes
 **Parameterizing Behavior**- when you take a block of code and make it available without executing it.
 **Higher Order Function**- takes another function as input and/or returns a function as output 
-# Code
-```javascript
+**Callback Function**- the function we insert into the higher-order function
+**Pair Programming**- Collaboration with other engineers to solve problems. Not a "Stackoverflower", who copies and pastes code, nor a "Researcher", who avoids blocks by reading everything they can find on the block/bug. (a nice balance between the two) 
 
-```
 ## Closure
+**Closure**-
 ```javascript
 
 ```

@@ -16,6 +16,7 @@
 
 ## Closure
 **Closure**-
+**Memoization**- an optimization technique where you cache previously computed results, and return the cached result when the same computation is needed again.
 ```javascript
 
 ```

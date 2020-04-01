@@ -17,8 +17,28 @@
 ## Closure
 **Closure**-
 **Memoization**- an optimization technique where you cache previously computed results, and return the cached result when the same computation is needed again.
+**Lexical Enviornment**-
 ```javascript
+const once = f => {
+  let hasRun = false;
+  const t = (num) => {  
+    if (hasRun) {
+      return;
+    } else {
+      hasRun = true;
+      return f(num);
+    }
+  }
+  return t;
+}
 
+const addTwo = num => {
+  return num + 2;
+}
+
+const r = once(addTwo);
+r(4)
+r(9)
 ```
 ## Asynchronous JS
 ```javascript

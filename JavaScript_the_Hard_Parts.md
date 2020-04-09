@@ -15,12 +15,24 @@
 **Pair Programming**- Collaboration with other engineers to solve problems. Not a "Stackoverflower", who copies and pastes code, nor a "Researcher", who avoids blocks by reading everything they can find on the block/bug. (a nice balance between the two) 
 
 ## Closure
-**Closure**- when a function carries data like a variable when stored in the global memory to be used later
+**Closure**- when a function carries data like a variable when stored in the global memory to be used later.
+
 **Memoization**- an optimization technique where you cache previously computed results, and return the cached result when the same computation is needed again.
-**Lexical Enviornment**- what a piece of data carries when stored in the global memory
-**Function Decoration**- When you store code in a function's lexical enviornment that has been returned to the global memory
-**PLSRD**- Persistent Lexical Scope Referenced Data (Backpack). JS, being a statically scoped (lexical scope) language, depends upon the lexical enviornment of a function to reference the data in the global memory
-**COVE**- Closed over "Variable Environment"
+
+**Lexical Enviornment**- what a piece of data carries when stored in the global memory.
+
+**Function Decoration**- When you store code in a function's lexical enviornment that has been returned to the global memory.
+
+**PLSRD**- Persistent Lexical Scope Referenced Data (Backpack). JS, being a statically scoped (lexical scope) language, depends upon the lexical enviornment of a function to reference the data in the global memory.
+
+**COVE**- Closed over "Variable Environment".
+
+**Mutliple Closure Instances**- function definitions only use one unique backpack. If a function is defined twice, it will be a different backpack for both function definitions
+
+Ultimately, Closures give our functions persistent memories, which is useful in helper functions like "once" & "memoize", iterators & generators, module pattern, and asynch JS.
+
+Module Pattern- Preserve state for the life of an application without polluting the global namespace
+
 ```javascript
 const once = f => {
   let hasRun = false;

@@ -18,6 +18,9 @@
 **Closure**- when a function carries data like a variable when stored in the global memory to be used later
 **Memoization**- an optimization technique where you cache previously computed results, and return the cached result when the same computation is needed again.
 **Lexical Enviornment**- what a piece of data carries when stored in the global memory
+**Function Decoration**- When you store code in a function's lexical enviornment that has been returned to the global memory
+**PLSRD**- Persistent Lexical Scope Referenced Data (Backpack). JS, being a statically scoped (lexical scope) language, depends upon the lexical enviornment of a function to reference the data in the global memory
+**COVE**- Closed over "Variable Environment"
 ```javascript
 const once = f => {
   let hasRun = false;

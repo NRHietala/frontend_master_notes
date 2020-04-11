@@ -82,7 +82,7 @@ delay(addTwo, 1000, 2)
 function rollCall(names) {
   let roll = 0
   return () => {
-    if (roll < 3){
+    if (roll < names.length){
     console.log(names[roll]);
     roll++
     }else {

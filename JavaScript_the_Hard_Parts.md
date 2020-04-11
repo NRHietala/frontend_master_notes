@@ -34,6 +34,7 @@ Ultimately, Closures give our functions persistent memories, which is useful in 
 Module Pattern- Preserve state for the life of an application without polluting the global namespace
 
 ```javascript
+//Once
 const once = f => {
   let hasRun = false;
   const t = (num) => {  
@@ -54,6 +55,41 @@ const addTwo = num => {
 const r = once(addTwo);
 r(4)
 r(9)
+
+//After
+function after(count, func) {
+  	let times = 1;	
+  	return () => {
+  	if (times < count) {
+      times++;
+    } else {
+      return func();
+    }
+  }
+}
+
+//Delay
+function addTwo(num) {
+  console.log(num + 2);
+}
+function delay(func, wait, num) {
+  setTimeout(func, wait, num)
+}
+
+delay(addTwo, 1000, 2)
+
+//rollCall
+function rollCall(names) {
+  let roll = 0
+  return () => {
+    if (roll < 3){
+    console.log(names[roll]);
+    roll++
+    }else {
+      console.log("Everyone Accounted for!")
+    }
+  }
+}
 ```
 ## Asynchronous JS
 ```javascript

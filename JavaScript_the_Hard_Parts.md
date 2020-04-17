@@ -90,6 +90,20 @@ function rollCall(names) {
     }
   }
 }
+
+//saveOutput
+function saveOutput(func, magicWord) {
+  const obj = {}
+  return (n) => {
+    if (n === magicWord) {
+      return obj
+    } else {
+      const val = func(n)
+      obj[n] = val
+      return val
+    }
+  }
+}
 ```
 ## Asynchronous JS
 ```javascript

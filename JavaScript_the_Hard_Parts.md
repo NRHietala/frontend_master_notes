@@ -121,6 +121,11 @@ function cycleIterator(array) {
   }
 ```
 ## Asynchronous JS
+JavaScript is not used by the browser features. It is used as an interface with them, which includes DevTools, Timer, Sockets, Console, Network Requests, HTML DOM, and others.
+
+Example is the setTimeout(). It interfaces with the timer that is built into the web browser, but not itself a part of JavaScript.
+
+Another example is document(). It interfaces with the HTML DOM. Fetch => Network Requests. Console => the Console.
 ```javascript
 
 ```

@@ -126,6 +126,13 @@ JavaScript is not used by the browser features. It is used as an interface with 
 Example is the setTimeout(). It interfaces with the timer that is built into the web browser, but not itself a part of JavaScript.
 
 Another example is document(). It interfaces with the HTML DOM. Fetch => Network Requests. Console => the Console.
+
+setTimeout "facade function" will place its callback function input into the Callback Queue until all synchronous code is complete, then it will move to the Call Stack to be executed.
+
+In Asynch JS, facade functions go to the web browser features, wait until its conditions are met, and then place its callback function into the Callback Queue, which will wait until ALL synchronous code is run. (Call Stack MUST be empty; the feature that checks to make sure that the Call Stack is empty before checking the Callback Queue is the **Event Loop**
+
+**Callback Hell**- when functions have too many nested functions and callback function inputs. It often will resemble of pyramid, giving it another name "Pyramid of Doom"
+
 ```javascript
 
 ```

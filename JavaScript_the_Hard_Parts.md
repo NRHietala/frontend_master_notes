@@ -104,6 +104,21 @@ function saveOutput(func, magicWord) {
     }
   }
 }
+
+//cycleIterator
+function cycleIterator(array) {
+	let count = -1;
+  return () => {
+    	if (count < array.length-1) {
+        count++;
+    		return array[count];
+      } else {
+        count = -1;
+        count++;
+        return array[count]
+      }
+ 	 }
+  }
 ```
 ## Asynchronous JS
 ```javascript

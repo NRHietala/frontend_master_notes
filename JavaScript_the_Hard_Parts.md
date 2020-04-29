@@ -137,7 +137,37 @@ In Asynch JS, facade functions go to the web browser features, wait until its co
 
 ```
 ## Promises
+
+Promises use two-pronged "facade" functions that both **Initiate background web browser work and Return a placeholder object (promise) immediately in JavaScript**
+
+Promises act as a placeholder for the data we expect to get back from the web
+browser feature’s background work
+
+VERY IMPORTANT: When dealing with asynch code, it will be delayed until all functions have left the Call Stack. This means that the non-asynch functions get priority over asynch functions
+
+When an asynch function is read, it is sent to the Web Browser Features (API) to be completed. Once it is completed it is sent to the Callback Queue, and once all non-asynch code is executed and out of the callstack, the asynch code is sent to the Call stack and executed.
+
+**Fetch**
+
+A method that returns a Promise object. The Promise has a condition that must be met to execute a Response. The Promise object has a value, and code to be executed once value is fulfilled (Response)
+
+So in short, we first define the path (**Fetch**), secondly request data from the server (**Request**), thirdly define the content type (**Body**) and last but not least, we access the data (**Response**).
+
+**Then**
+
+
+
 ```javascript
+//Will's 1st Example
+
+function display(data){
+ console.log(data)
+}
+const futureData = fetch('https://twitter.com/will/tweets/1')
+futureData.then(display);
+
+console.log("Me first!");
+
 
 ```
 ## Classes & Prototypes

@@ -153,9 +153,19 @@ A method that returns a Promise object. The Promise has a condition that must be
 
 So in short, we first define the path (**Fetch**), secondly request data from the server (**Request**), thirdly define the content type (**Body**) and last but not least, we access the data (**Response**).
 
+Fetch is 2 pronged. It uses the Network Request in the Web Browser and it makes a Promise Object that contains a value and an onFulfilled propert. The value is the the parameter of the Fetch method, and then once the result of the value is returned from the network request, it is stored in the onFulfilled.
+
 **Then**
 
+.then() takes a function. After the fetch is fulfilled, the paratmeter of the fulfilled becomes the parameter of the function in .then ()
 
+Any code we want to run on the returned data must also be saved on the promise
+object
+
+Added using .then method to the hidden property ‘onFulfilment’
+
+Promise objects will automatically trigger the attached function to run (with its
+input being the returned data 
 
 ```javascript
 //Will's 1st Example

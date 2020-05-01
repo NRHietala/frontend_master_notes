@@ -180,7 +180,3 @@ console.log("Me first!");
 
 
 ```
-## Classes & Prototypes
-```javascript
-
-```
